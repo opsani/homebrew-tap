@@ -2,21 +2,21 @@
 class OpsaniCli < Formula
   desc "Opsani CLI"
   homepage "https://github.com/opsani/cli"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/opsani/cli/releases/download/v0.1.0/opsani-cli_0.1.0_macOS_amd64.tar.gz"
-    sha256 "d5945ef437fd166a50b8901a6893fe46f121cb0973720d784824621cb2fa1ab5"
+    url "https://github.com/opsani/cli/releases/download/v0.1.1/opsani-cli_0.1.1_macOS_amd64.tar.gz"
+    sha256 "6e8fb81e81bd5f542756ba4661928e6bc1279eb0998904a5a5c924a17d3b0c02"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/opsani/cli/releases/download/v0.1.0/opsani-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "71fbd374324249a52707588d49734644d77654682f47ef7a389695c8cef71984"
+      url "https://github.com/opsani/cli/releases/download/v0.1.1/opsani-cli_0.1.1_linux_amd64.tar.gz"
+      sha256 "1cf08a8132ac484d43689a531ba83c7682cbe5a933e55584538ac4b696cd34c7"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/opsani/cli/releases/download/v0.1.0/opsani-cli_0.1.0_linux_arm64.tar.gz"
-        sha256 "683b17fec23bf622940a377d9a5ba30df7e356a81e1ca84cf7d0a1b6a1d00803"
+        url "https://github.com/opsani/cli/releases/download/v0.1.1/opsani-cli_0.1.1_linux_arm64.tar.gz"
+        sha256 "7b922c05010bf6d05cdd21e7f6af1911b2b8484ef3a679fbc2abed25f1f809fb"
       else
       end
     end
