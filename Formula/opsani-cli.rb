@@ -7,16 +7,16 @@ class OpsaniCli < Formula
 
   if OS.mac?
     url "https://github.com/opsani/cli/releases/download/v0.2.0/opsani-cli_0.2.0_macOS_amd64.tar.gz"
-    sha256 "1bad6689a940f84cc7962fb782f53c2882a213054fbdb07c392298b26a12275d"
+    sha256 "31fbf209a03babba35a5faab472dd38c497ee61ea04dfe5ee32aeaed5ff9ec2c"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/opsani/cli/releases/download/v0.2.0/opsani-cli_0.2.0_linux_amd64.tar.gz"
-      sha256 "851b78638b3d1e13608f17900b6bb123716c4b1af6c7edc41d7d337ee27e67a1"
+      sha256 "df75efa5436b1d267928007c6ca173df62c1f7acf4978491976b1a621961223f"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/opsani/cli/releases/download/v0.2.0/opsani-cli_0.2.0_linux_arm64.tar.gz"
-        sha256 "b26099cf7578460a1c3703a672072dbb4e0ded711e2c70e0e7babae92cb8edb9"
+        sha256 "3bd10c1b30462f655ab8b283b119c8b60360c6905cb0d9ad6c4d356809f9b23b"
       else
       end
     end
